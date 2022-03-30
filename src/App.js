@@ -10,8 +10,6 @@ function App() {
       .then((res) => res.json())
       .then(
         (result) => {
-          console.log("Success:");
-          console.log(result);
           setData(result);
         },
         (error) => {

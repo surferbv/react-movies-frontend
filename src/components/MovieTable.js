@@ -14,7 +14,7 @@ export default function MovieTable(props) {
   const rows = movieData;
   const [openModal, setOpenModal] = React.useState(false);
   const [id, setId] = React.useState(null);
-  const [actionType, setActionType] = React.useState(null);
+  const [actionType, setActionType] = React.useState(false);
 
   function handleOpenModal(id, actionType){
     setOpenModal(true);
@@ -30,7 +30,7 @@ export default function MovieTable(props) {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>id</TableCell>
+              <TableCell>ID</TableCell>
               <TableCell align="left">Title</TableCell>
               <TableCell align="left">Ratig</TableCell>
               <TableCell align="center" colSpan={3}>
